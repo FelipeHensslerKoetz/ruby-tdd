@@ -20,5 +20,8 @@ describe Calculator do
       result = calc.sum(-5, 10)
       expect(result).to eq(5)
     end
+
+    it 'future test'
+    xit 'skip this test'
   end
 end
