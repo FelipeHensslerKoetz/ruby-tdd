@@ -24,4 +24,14 @@ describe Calculator do
     it 'future test'
     xit 'skip this test'
   end
+
+  context '#divide' do
+    it 'with 0 as the denominator' do
+      expect { subject.divide(1, 0) }.to raise_exception
+      expect { subject.divide(1, 0) }.to raise_error(ZeroDivisionError)
+      expect { subject.divide(1, 0) }.to raise_error('divided by 0')
+      expect { subject.divide(1, 0) }.to raise_error(ZeroDivisionError, 'divided by 0')
+      expect { subject.divide(1, 0) }.to raise_error(/divided/)
+    end
+  end
 end
