@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'Predicate matchers' do
   it 'odd' do
     expect(1).to be_odd

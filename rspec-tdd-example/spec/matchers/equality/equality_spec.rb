@@ -1,3 +1,5 @@
+# frozen_string_literal: false
+
 describe 'Equality matchers' do
   it '#equal - test if the object is the same' do
     x = 'ruby'

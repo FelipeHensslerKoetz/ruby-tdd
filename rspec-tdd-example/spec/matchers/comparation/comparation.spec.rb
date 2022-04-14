@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'Comparation Methods' do
   it '>' do
     expect(1).to be > 0

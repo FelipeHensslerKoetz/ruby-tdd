@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Array.new([1, 2, 3]), 'Arrays matchers' do
   it '#include' do
     expect(subject).to include(2)

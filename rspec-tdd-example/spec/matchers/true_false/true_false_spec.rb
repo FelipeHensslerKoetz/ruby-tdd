@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'Ture/False matchers' do
   it 'be true' do
     expect(1.odd?).to be(true)

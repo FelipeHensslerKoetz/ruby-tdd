@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'Classes Matchers' do
   it 'be_instance_of' do
     expect(1).to be_instance_of(Integer)
