@@ -2,7 +2,7 @@
 
 require 'calculator'
 
-describe Calculator do
+RSpec.describe Calculator do
   subject(:calc) { described_class.new }
 
   context '#sum' do
