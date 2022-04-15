@@ -15,13 +15,13 @@ describe 'Equality matchers' do
     expect(y).to be(y)
   end
 
-  it 'eql - test if the value' do
+  it 'eql - test if the value is the same' do
     x = 'ruby'
     y = 'ruby'
     expect(x).to eql(y)
   end
 
-  it 'eq - test if the value' do
+  it 'eq - test if the value is the same' do
     x = 'ruby'
     y = 'ruby'
     expect(x).to eq(y)
