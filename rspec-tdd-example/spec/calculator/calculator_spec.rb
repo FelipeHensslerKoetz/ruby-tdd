@@ -1,9 +1,27 @@
-# frozen_string_literal: 
+# frozen_string_literal: true
 
 require 'calculator'
 
 RSpec.describe Calculator do
   subject(:calc) { described_class.new }
+
+  before(:context) do
+    puts 'Before context'
+  end
+
+  # before(:all) dos
+    #puts 'Before all'
+  #end
+
+  #before(:each) do
+    #puts 'Before each'
+  #end
+
+  around(:each) do |test|
+    puts 'Before (around)'
+    test.run
+    puts 'After (around)'
+  end
 
   context '#sum' do
     it 'with postive numbers' do
