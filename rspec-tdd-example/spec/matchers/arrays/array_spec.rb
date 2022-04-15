@@ -10,7 +10,9 @@ RSpec.describe Array.new([1, 2, 3]), 'Arrays matchers' do
 
   it { is_expected.to be_an_array_excluding(4) }
 
-  it '#match_array' do
+  it '#match_array', :aggregate_failures do
+    # expect(subject).to match_array([])
+    # expect(subject).to match_array([42])
     expect(subject).to match_array([3, 2, 1])
     expect(subject).not_to match_array([3, 2])
   end
