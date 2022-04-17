@@ -7,7 +7,7 @@ class Student
     # should return true or false based on another logic
   end
 
-  def foo 
+  def foo(arg) 
 
   end
 end
