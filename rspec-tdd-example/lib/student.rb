@@ -6,4 +6,8 @@ class Student
   def has_finished?(course)
     # should return true or false based on another logic
   end
+
+  def foo 
+
+  end
 end
