@@ -1,2 +1,2 @@
-# rails-tdd
-TDD with Ruby on Rails lessons from a Udemy course 
+# ruby-tdd
+TDD with pure Ruby based on lessons from an Udemy course 
