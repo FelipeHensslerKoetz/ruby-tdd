@@ -2,7 +2,8 @@
 
 RSpec::Matchers.define_negated_matcher :be_an_array_excluding, :include
 
-RSpec.describe Array.new([1, 2, 3]), 'Arrays matchers' do
+# rspec -t type:array (runs tests with the array type flag)
+RSpec.describe Array.new([1, 2, 3]), 'Arrays matchers', type: 'array' do
   it '#include' do
     expect(subject).to include(2)
     expect(subject).to include(2, 1)
